@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c768103ecd9391949441a0c1e993acf9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c768103ecd9391949441a0c1e993acf9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c768103ecd9391949441a0c1e993acf9 = L.map(
+                "map_c768103ecd9391949441a0c1e993acf9",
+                {
+                    center: [52.2297, 21.0122],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e6a36f7929e3c0c89edcb77d6c2f1b8a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e6a36f7929e3c0c89edcb77d6c2f1b8a.addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+            var marker_1d349af5cdd60cc0b351910e0376628a = L.marker(
+                [52.2503, 21.0125],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_89e8483a4386ecc927e62ade13c383cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cec6c1ceb9cdd469a0ee29a9e0b33e92 = $(`<div id="html_cec6c1ceb9cdd469a0ee29a9e0b33e92" style="width: 100.0%; height: 100.0%;">Stare Miasto</div>`)[0];
+                popup_89e8483a4386ecc927e62ade13c383cb.setContent(html_cec6c1ceb9cdd469a0ee29a9e0b33e92);
+            
+        
+
+        marker_1d349af5cdd60cc0b351910e0376628a.bindPopup(popup_89e8483a4386ecc927e62ade13c383cb)
+        ;
+
+        
+    
+    
+            var marker_163ba99f1d8efcfec7da97561301c1ec = L.marker(
+                [52.2159, 21.0355],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_3f43fba02e2e3efb57f2ed7b6b7c3ffd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0242c3df25fc4feaba0db1b40523d078 = $(`<div id="html_0242c3df25fc4feaba0db1b40523d078" style="width: 100.0%; height: 100.0%;">Łazienki Królewskie</div>`)[0];
+                popup_3f43fba02e2e3efb57f2ed7b6b7c3ffd.setContent(html_0242c3df25fc4feaba0db1b40523d078);
+            
+        
+
+        marker_163ba99f1d8efcfec7da97561301c1ec.bindPopup(popup_3f43fba02e2e3efb57f2ed7b6b7c3ffd)
+        ;
+
+        
+    
+    
+            var marker_cec8519dd2c093a2be10bbca24898093 = L.marker(
+                [52.2315, 21.0067],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_e9f3d07231af9975f2e7e739eff8f5d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cfb41a80a59d838f7f6a7677c93d110 = $(`<div id="html_5cfb41a80a59d838f7f6a7677c93d110" style="width: 100.0%; height: 100.0%;">Pałac Kultury i Nauki</div>`)[0];
+                popup_e9f3d07231af9975f2e7e739eff8f5d7.setContent(html_5cfb41a80a59d838f7f6a7677c93d110);
+            
+        
+
+        marker_cec8519dd2c093a2be10bbca24898093.bindPopup(popup_e9f3d07231af9975f2e7e739eff8f5d7)
+        ;
+
+        
+    
+    
+            var marker_5a5f7bddd96ef30cf4f8bb54e0e07940 = L.marker(
+                [52.2322, 20.9811],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_f162e3467fe018a29a487770b66c195d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_733176d3f11dd516a5523f2064e4df13 = $(`<div id="html_733176d3f11dd516a5523f2064e4df13" style="width: 100.0%; height: 100.0%;">Muzeum Powstania Warszawskiego</div>`)[0];
+                popup_f162e3467fe018a29a487770b66c195d.setContent(html_733176d3f11dd516a5523f2064e4df13);
+            
+        
+
+        marker_5a5f7bddd96ef30cf4f8bb54e0e07940.bindPopup(popup_f162e3467fe018a29a487770b66c195d)
+        ;
+
+        
+    
+    
+            var marker_a0704f92151ee2232795abc11b21953e = L.marker(
+                [52.240303, 21.007661],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_77c128f0ce90ca34be44bc8a110c2a82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73c152c6406894abcc43048cb40cb270 = $(`<div id="html_73c152c6406894abcc43048cb40cb270" style="width: 100.0%; height: 100.0%;">Ogród Saski</div>`)[0];
+                popup_77c128f0ce90ca34be44bc8a110c2a82.setContent(html_73c152c6406894abcc43048cb40cb270);
+            
+        
+
+        marker_a0704f92151ee2232795abc11b21953e.bindPopup(popup_77c128f0ce90ca34be44bc8a110c2a82)
+        ;
+
+        
+    
+    
+            var marker_3f6399ea8fb185b956ae64ba35269ed8 = L.marker(
+                [52.24193, 21.028512],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_476bb2f4cb51e9be9e17dca3c4958b85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_803accaab03e3f65a2280f511f01c53f = $(`<div id="html_803accaab03e3f65a2280f511f01c53f" style="width: 100.0%; height: 100.0%;">Centrum Nauki Kopernik</div>`)[0];
+                popup_476bb2f4cb51e9be9e17dca3c4958b85.setContent(html_803accaab03e3f65a2280f511f01c53f);
+            
+        
+
+        marker_3f6399ea8fb185b956ae64ba35269ed8.bindPopup(popup_476bb2f4cb51e9be9e17dca3c4958b85)
+        ;
+
+        
+    
+    
+            var marker_a191ec937fae9721a561a431cec8f268 = L.marker(
+                [52.282009, 21.061219],
+                {}
+            ).addTo(map_c768103ecd9391949441a0c1e993acf9);
+        
+    
+        var popup_a58eeea44f0652344607e3fa7cd637f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a29014c98d11a884a8461ea72298524 = $(`<div id="html_5a29014c98d11a884a8461ea72298524" style="width: 100.0%; height: 100.0%;">Dom Twórcy</div>`)[0];
+                popup_a58eeea44f0652344607e3fa7cd637f7.setContent(html_5a29014c98d11a884a8461ea72298524);
+            
+        
+
+        marker_a191ec937fae9721a561a431cec8f268.bindPopup(popup_a58eeea44f0652344607e3fa7cd637f7)
+        ;
+
+        
+    
+</script>
+</html>

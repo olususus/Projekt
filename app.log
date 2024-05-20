@@ -1,0 +1,7 @@
+2024-02-18 20:44:11,455 - INFO - Lista klientów:
+2024-02-18 20:46:57,420 - INFO - Lista klientów:
+2024-02-18 20:46:57,420 - INFO - ID: 1, Imiê: John Doe, Email: john@example.com
+2024-02-18 20:46:57,421 - INFO - ID: 2, Imiê: Jane Smith, Email: jane@example.com
+2024-02-18 20:46:57,421 - INFO - Nowa rezerwacja:
+2024-02-18 20:46:57,421 - INFO - Rezerwacja: Klient - John Doe, Numer pokoju - 101, Noclegów - 3
+2024-02-18 20:48:43,004 - INFO - Rezerwacja zosta³a dokonana pomyœlnie.
