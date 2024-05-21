@@ -139,10 +139,18 @@ class HotelApp:
         self.button_explore.grid(row=4, column=0, columnspan=2)
         self.button_infolinia = ctk.CTkButton(master, text='Infolinia', command=lambda: [self.infolinia()])
         self.button_infolinia.grid(row=5, column=0, columnspan=2)
-        self.exit_button = ctk.CTkButton(master, text='Wyjdz', command=lambda: [sys.exit()])
+        self.exit_button = ctk.CTkButton(master, text='Wyjdz', command=lambda: [self.destrukcja()])
         self.information_button = ctk.CTkButton(master, text='Twórca', command=lambda: [messagebox.showinfo(message=('Tylko ja'))])
         self.information_button.grid(row=6, column=0, columnspan=2)
         self.exit_button.grid(row=7, column=0, columnspan=2)
+
+    def destrukcja(self):
+        pygame.mixer.init()
+        pygame.mixer.music.load('fart.mp3')
+        pygame.mixer.music.play()
+        sleep(6)
+        sys.exit()
+
 
 # TODO - Referenciuj plik '/references/infolinia.png'
     def infolinia(self):
