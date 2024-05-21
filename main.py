@@ -151,7 +151,6 @@ class HotelApp:
         sleep(6)
         sys.exit()
 
-# TODO - Referenciuj plik '/references/infolinia.png'
     def infolinia(self):
         infoliniowanie = ctk.CTkToplevel(self.master)
         infoliniowanie.title('Infolinia')
