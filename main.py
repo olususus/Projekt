@@ -141,8 +141,16 @@ class HotelApp:
         self.button_infolinia.grid(row=5, column=0, columnspan=2)
         self.exit_button = ctk.CTkButton(master, text='Wyjdz', command=lambda: [self.destrukcja()])
         self.information_button = ctk.CTkButton(master, text='Twórca', command=lambda: [messagebox.showinfo(message=('Tylko ja'))])
+        self.reklama_troll_button = ctk.CTkButton(master, text='Info', command=lambda: [self.info_trollig()])
+        self.reklama_troll_button.grid(row=8, column=0, columnspan=2)
         self.information_button.grid(row=6, column=0, columnspan=2)
         self.exit_button.grid(row=7, column=0, columnspan=2)
+
+    def info_trollig(self):
+        pygame.mixer.init()
+        pygame.mixer.music.load('ads.mp3')
+        pygame.mixer.music.play()
+        messagebox.showinfo(message='Ten program jest sponsorowany przez RAID SHADOW LEGENDS!')
 
     def destrukcja(self):
         pygame.mixer.init()
