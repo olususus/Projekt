@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "balls",
+  "steps": [
+    {
+      "title": "Introduction",
+      "description": "Pobierz rozszerzenia z potrzebne1.txt"
+    }
+  ],
+  "ref": "main"
+}
