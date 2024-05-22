@@ -145,6 +145,18 @@ class HotelApp:
         self.reklama_troll_button.grid(row=8, column=0, columnspan=2)
         self.information_button.grid(row=6, column=0, columnspan=2)
         self.exit_button.grid(row=7, column=0, columnspan=2)
+        self.dla_gosci = ctk.CTkButton(master, text='Dla Gosci Hotelu', command=lambda: [self.system_gosci()])
+        self.dla_gosci.grid(row=9, column=0, columnspan=2)
+
+    def system_gosci(self):
+        goscie = ctk.CTkToplevel(self.master)
+        goscie.title('Goscie Hotelu')
+        self.guzik_goscie_info = ctk.CTkButton(goscie, text='Informacja dla gosci.', command= lambda:[messagebox.showinfo(message='Dzisiejszy obiad odbywa sie tylko na 1 i 2 pietrze ze wzgledu na wesele w restauracji na 1 pietrze.')])
+        self.guzik_goscie_info.pack()
+        self.guzik_roomservice = ctk.CTkButton(goscie, text='Room Service', command=lambda:[messagebox.showinfo(message='Room Service pojawi sie w pana pokoju w nastepstwie nastepnych 5 minut')])
+        self.guzik_roomservice.pack()
+        self.againadmin = ctk.CTkButton(goscie, text='Admin all over again', command =lambda:[self.admin_mode()])
+        self.againadmin.pack()
 
     def info_trollig(self):
         pygame.mixer.init()
