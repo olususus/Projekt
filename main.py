@@ -96,7 +96,7 @@ class StartScreen:
         pygame.init()
         self.screen = pygame.display.set_mode((1920, 1080), pygame.NOFRAME)
         pygame.display.set_caption('Start Screen')
-        self.movie = 'loading_screen.mp4'
+        self.movie = ''
         self.cap = cv2.VideoCapture(self.movie)
         self.frame_rate = int(self.cap.get(cv2.CAP_PROP_FPS))
         pygame.mixer.quit()
